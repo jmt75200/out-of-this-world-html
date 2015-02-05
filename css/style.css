@@ -1,0 +1,45 @@
+/* CSS for out of this world */
+@import url(http://fonts.googleapis.com/css?family=Arvo|Raleway);
+
+body {
+  max-width: 900px;
+  margin: auto;
+  background-color: #b000b5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Arvo', serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+
+header{
+  background-color: #000;
+  color: #fff;
+  padding: 20px 30px;
+  background-image: url(../img/header_galaxy.jpg);
+  background-size: cover;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  line-height: 1;
+}
+
+nav ul li a:hover {
+  color: #1ce ;
+}
+
+section {
+  background-color: #fff;
+}
