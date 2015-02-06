@@ -18,11 +18,20 @@ h1 {
   font-size: 2.5em;
 }
 
+h1, h4 {
+  border-bottom: 1px dashed #fff; 
+}
+
+h3 {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 80px;
+  margin: 20px 10px;
+}
 
 header{
   background-color: #000;
   color: #fff;
-  padding: 20px 30px;
   background-image: url(../img/header_galaxy.jpg);
   background-size: cover;
 }
@@ -40,6 +49,44 @@ nav ul li a:hover {
   color: #1ce ;
 }
 
+header, section, aside {
+  padding: 20px 30px;
+}
+
 section {
   background-color: #fff;
+  margin: auto;
+}
+
+#main_content section p span {
+  font-weight: bold;
+  color: #1ce ;
+}
+
+aside {
+  background-image: url(../img/aside_background.jpg);
+  margin: auto;
+  color: #fff;
+}
+
+aside:hover {
+  transform: rotateX(180deg);
+  transition-duration: 1.5s;
+}
+
+aside p {
+  background-color: rgba(0,0,0, .25);
+  padding: 10px 20px;
+}
+
+aside h4 {
+  line-height: 2;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p a:hover{
+  color: #1ce;
 }
