@@ -70,7 +70,7 @@ aside {
 }
 
 aside:hover {
-  transform: rotateX(180deg);
+  transform: rotateX(360deg);
   transition-duration: 1.5s;
 }
 
