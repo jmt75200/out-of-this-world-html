@@ -1,11 +1,14 @@
 /* CSS for out of this world */
 @import url(http://fonts.googleapis.com/css?family=Arvo|Raleway);
 
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
 body {
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
   background-color: #b000b5;
-  font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
 
@@ -15,7 +18,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.5em;
+   font-size: 5em;
+   margin:0;
+}
+
+h1:hover {
+  transition-duration: 1.5s;
 }
 
 h1, h4 {
@@ -29,6 +37,8 @@ h3 {
   margin: 20px 10px;
 }
 
+/* header */
+
 header{
   background-color: #000;
   color: #fff;
@@ -37,25 +47,68 @@ header{
 }
 
 nav > ul {
-  padding: 0;
+  padding: 30px 0;
+  margin: 20px 0 0 0;
+  display: block;
+  background-color: rgba(0,0,0,.5);
+  text-align: center;
+  position: relative;
 }
 
 nav ul li {
   list-style-type: none;
+  display: inline;
+  padding: 20px;
+}
+
+nav ul li:hover {
+  background-color: rgba(0,0,0,.5);
+  border-radius: 5px;
+
 }
 
 nav ul li a {
   color: #fff;
   line-height: 1;
+  display: inline;
+  /*padding: 0 15px;*/
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+nav ul li.active a{
+  color: #1ce;
 }
 
 nav ul li a:hover {
   color: #1ce ;
 }
 
-header, section, aside {
+/* dropdown subnav */
+ul.sub_nav {
+  display: none;
+  position: absolute;
+  background-color: #7eaba6;
+  left: 62.6%;
+  padding: 0 5px;
+  top: 74%;
+}
+
+nav ul li:hover ul.sub_nav {
+  display: block; 
+}
+
+.sub_nav li {
+  position: relative;
+  display: block;
+}
+
+/*Main content*/
+
+section, aside {
   padding: 20px 30px;
 }
+
 
 section {
   background-color: #fff;
@@ -67,15 +120,37 @@ section {
   color: #1ce ;
 }
 
+#main_content section ul {
+  margin-bottom: 40px;
+}
+
+#main_content section ul li{
+  display: inline-block;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid #000;
+  width: 100px;
+  position: relative;
+}
+
+#main_content ul li ul {
+  position: absolute;
+  display: none;
+}
+
+#main_content ul li:hover ul {
+  display: block;
+}
+
+#main_content ul li ul li{
+  display: block;
+  position: relative;
+}
+
 aside {
   background-image: url(../img/aside_background.jpg);
   margin: auto;
   color: #fff;
-}
-
-aside:hover {
-  transform: rotateX(360deg);
-  transition-duration: 1.5s;
 }
 
 aside p {
