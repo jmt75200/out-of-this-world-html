@@ -36,6 +36,10 @@ header{
   background-size: cover;
 }
 
+nav > ul {
+  padding: 0;
+}
+
 nav ul li {
   list-style-type: none;
 }
